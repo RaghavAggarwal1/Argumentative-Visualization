@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Homework #5: Argumentative Vis - CSE 578 - Spring 2023</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="js/hw5.js"></script>
+        <style>
+            .myContainer, .info {
+                margin:auto;
+                width:1210px;
+            }
+            #bar1_div, #bar2_div {
+                float:left;
+                width:600px;
+                padding:10px;
+            }
+            #bar2_div {
+                float:right;
+            }
+            svg {
+                width: 580px;
+                height:500px;
+                background-color: white;
+                border: 1px solid lightgray;
+                border-radius: 3px;
+            }
+            barTooltip.tooltip {
+                background: white;
+                padding: 8px;
+                position: absolute;
+                pointer-events: none;
+                border: 2px solid black;
+                border-radius: 5px;
+                text-align: center;
+                }
+
+        </style>
+    </head>
+    <body>
+        <div class="myContainer">
+            <h1 class="text-center">Homework #5: Argumentative Vis</h1>
+            <h3 class="text-center">Raghav Aggarwal - <a href="mailto:raggar13@asu.edu">raggar13@asu.edu</a></h3>
+            <hr>
+            <h4 class="text-center" style="color: maroon;">Should abortion be Illegal?</h4><br>
+            <div id="bar1_div" class="border border-dark rounded bg-light shadow-sm">
+                    Chart shows votes in favor of legalizing abortion
+                    <svg id="bar1_svg"></svg>
+            </div>
+            
+            <div id="bar2_div" class="border border-dark rounded bg-light shadow-sm">
+                    Chart shows votes in favor of illegalizing abortion
+                    <svg id="bar2_svg"></svg>
+            </div>
+            <br>
+            <br> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span style="color: green;">Votes for Legalizing Abortion is High!</span> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<span style="color: red;">Votes for Illegalizing Abortion is Low!</span>
+        </div>
+        <br>
+        <div class="info">
+            <h4 class="text-center">Introdunction</h4><br>
+            <p>Abortion is a highly debated topic globally and refers to the termination of pregnancy before the fetus can survive outside the womb. In this project, we analyze public opinion on the legalization of abortion. 
+            The Dataset used in this project is from Data.World and can be found at <a href='https://data.world/makeovermonday/2021w36/workspace/file?filename=Abortion+Support.xlsx'>data.world</a>
+        <br><br> In my opinion, the decision of whether to have an abortion should be a personal one, and individuals should have the right to make that choice. A mother's love is unmatched by anything else, and if a mother is not willing to have a child even before it is born, the child may face issues later in life. As a society, we should not force someone to have a baby when they are not ready, and we should allow them to have an abortion while the fetus is not yet formed. </p><br>
+            <h4 class="text-center">Left Chart</h4><br>
+            <p>The left chart potrays the growing support for legalizating abortion, empowering individuals to choose whether or not to have one. The chart begins at 21% in 1975 and recheas a high of 32% in 2021. 
+                The chart uses a Line chart to display data, rhetorical technique of <b>Omission</b> is used, where extra data such as "Legal only under certain %" was not included to make the chart easier to comprehend.
+                At the same time we used <b>Data Provenance</b>, inspite of using Omission we are providing the link to the dataset as it can betray the intent of the visualization but at the same time it signal transparency to the user which is essential for any good visualization.
+                 <b>Green color</b> is further used to represent the positive nature of the trend.</p><br>
+            <h4 class="text-center">Right Chart</h4><br>
+            <p>The right chart illustrates the declining support for illegalizing abortion. The chart ends at a low of 19%, clearly indicating a shift in public opinion. 
+                The chart uses a Line chart to display data, rhetorical technique of <b>Anchoring</b> is used, as it provides a fixed comparission between the two visualizations and allows the user oppertunity to contrast the information available in the chart. This helps the user to focus on the important information and not get distracted by extra information.  
+                <b>Cultural codes</b> are also used to depict the trend, as recent times have showed a low support for illegalizing abortion and users will already expect those numbers to be low.  
+                <b>Red color</b> is further used to represent the negative nature of the trend.</p><br>
+            <p style="text-align: center;">The above mentioned 4 techniques - Omission, Data Provenance, Anchoring and Cultural codes are referenced from the paper -<br> <a href='http://www-personal.umich.edu/~jhullman/vis_rhetoric.pdf'>Visualization Rhetoric: Framing Effects in Narrative Visualization</a> (Hullman and Diakopoulos, 2011 paper)</p><br>
+            <h6 style="text-align: center;">Database Source: <a href='https://data.world/makeovermonday/2021w36/workspace/file?filename=Abortion+Support.xlsx'>data.world</a></h6><br>
+        </div>
+
+    </body>
+</html>
